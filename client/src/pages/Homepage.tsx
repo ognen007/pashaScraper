@@ -11,7 +11,7 @@ export const Homepage: React.FC = () => {
 
   const exportToExcel = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/scrape`, {
+      const response = await axios.get(`https://pashascraper-server.onrender.com/scrape`, {
         params: {
           niche: niche,
           city: city
